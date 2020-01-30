@@ -29,11 +29,10 @@
         data-mce-href="img/android-chrome-192x192.png">
     <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" data-mce-href="img/favicon-96x96.png">
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" data-mce-href="img/favicon-16x16.png">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800|Roboto+Slab&display=swap"
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800%7CRoboto+Slab&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -76,7 +75,10 @@
                 <div class="services__content">
                     <div class="services__item">
                         <div class="services__icon">
-                            <img src="img/web_development.png" alt="Web Development">
+                            <picture>
+                                <source type="image/webp" srcset="img/web_development.webp 1x, img/web_development@2x.webp 2x, img/web_development@3x.webp 3x">
+                                <img src="img/web_development.png" srcset="img/web_development@2x.png 2x, img/web_development@3x.png 3x" alt="Web Development">
+                            </picture>
                         </div>
                         <h4 class="title-h4">Web Development</h4>
                         <p class="services__text">There are many variations of passages of Lorem Ipsum available, the
@@ -84,7 +86,10 @@
                     </div>
                     <div class="services__item">
                         <div class="services__icon">
-                            <img src="img/photography.png" alt="Photography">
+                            <picture>
+                                <source type="image/webp" srcset="img/photography.webp 1x, img/photography@2x.webp 2x, img/photography@3x.webp 3x">
+                                <img src="img/photography.png" srcset="img/photography@2x.png 2x, img/photography@3x.png 3x"alt="Photography">
+                             </picture>
                         </div>
                         <h4 class="title-h4">Photography</h4>
                         <p class="services__text">There are many variations of passages of Lorem Ipsum available, the
@@ -92,7 +97,10 @@
                     </div>
                     <div class="services__item">
                         <div class="services__icon">
-                            <img src="img/vector_artist.png" alt="Vector Artist">
+                            <picture>
+                                <source type="image/webp" srcset="img/vector_artist.webp 1x, img/vector_artist@2x.webp 2x, img/vector_artist@3x.webp 3x">
+                                <img src="img/vector_artist.png" srcset="img/vector_artist@2x.png 2x, img/vector_artist@3x.png 3x"alt="Vector Artist">
+                             </picture>
                         </div>
                         <h4 class="title-h4">Vector Artist</h4>
                         <p class="services__text">There are many variations of passages of Lorem Ipsum available, the
@@ -186,7 +194,9 @@
                             <div class="review__info">
                                 <div class="review__customer-name">Sourabh B.</div>
                                 <div class="review__customer-position">Co Founder of Mew</div>
-                                <p class="review__text">Great Team with great experience, i would reguler recommended to all that you will get better support by working with this awesome team and their expert members :)</p>
+                                <p class="review__text">Great Team with great experience, i would reguler recommended to
+                                    all that you will get better support by working with this awesome team and their
+                                    expert members :)</p>
                             </div>
                         </div>
                     </div>
@@ -198,7 +208,9 @@
                             <div class="review__info">
                                 <div class="review__customer-name">Sourabh B.</div>
                                 <div class="review__customer-position">Co Founder of Mew</div>
-                                <p class="review__text">Great Team with great experience, i would reguler recommended to all that you will get better support by working with this awesome team and their expert members :)</p>
+                                <p class="review__text">Great Team with great experience, i would reguler recommended to
+                                    all that you will get better support by working with this awesome team and their
+                                    expert members :)</p>
                             </div>
                         </div>
                     </div>
@@ -210,7 +222,9 @@
                             <div class="review__info">
                                 <div class="review__customer-name">Sourabh B.</div>
                                 <div class="review__customer-position">Co Founder of Mew</div>
-                                <p class="review__text">Great Team with great experience, i would reguler recommended to all that you will get better support by working with this awesome team and their expert members :)</p>
+                                <p class="review__text">Great Team with great experience, i would reguler recommended to
+                                    all that you will get better support by working with this awesome team and their
+                                    expert members :)</p>
                             </div>
                         </div>
                     </div>
@@ -218,9 +232,23 @@
                 <div class="reviews__review-back-1"></div>
                 <div class="reviews__review-back-2"></div>
                 <div class="reviews__arrows">
-                    <div class="reviews__arrows-prev">Previous</div>
-                    <div class="reviews__arrows-next">Next</div>
+                    <div class="reviews__arrow-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="17">
+                            <path class="arrow-prev" data-name="arrow icon"
+                                d="M.231 7.95L8.187.23A.8.8 0 0 1 8.749 0a.786.786 0 0 1 .795.77.756.756 0 0 1-.233.55l-6.6 6.41h31.492a.77.77 0 1 1 0 1.54H2.714l6.6 6.41a.756.756 0 0 1 .233.55.786.786 0 0 1-.795.77.8.8 0 0 1-.562-.23L.234 9.05a.766.766 0 0 1-.003-1.1z" />
+                        </svg>
+                        Previous
+                    </div>
+                    <div class="reviews__arrow-next">
+                        Next
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="17" viewBox="0 0 35 17">
+                            <path class="arrow-next" id="arrow_icon" data-name="arrow icon" class="cls-1"
+                                d="M903.769,3794.95l-7.956-7.72a0.8,0.8,0,0,0-.562-0.23,0.786,0.786,0,0,0-.8.77,0.757,0.757,0,0,0,.234.55l6.6,6.41H869.794a0.77,0.77,0,1,0,0,1.54h31.492l-6.6,6.41a0.757,0.757,0,0,0-.234.55,0.786,0.786,0,0,0,.8.77,0.8,0.8,0,0,0,.562-0.23l7.956-7.72A0.766,0.766,0,0,0,903.769,3794.95Z"
+                                transform="translate(-869 -3787)" />
+                        </svg>
+                    </div>
                 </div>
+            </div>
             </div>
         </section>
         <section class="download">
@@ -268,10 +296,10 @@
                         <img src="img/professional.png" alt="">
                         <span class="pricing__name">Professional</span>
                         <div class="pricing__cost">$
-                                <div>
-                                    <span class="pricing__cost-number">59</span>/mo
-                                </div>
+                            <div>
+                                <span class="pricing__cost-number">59</span>/mo
                             </div>
+                        </div>
                         <ul class="pricing__list">
                             <li class="pricing__list-item">6 GB storage</li>
                             <li class="pricing__list-item">Fast Brandwidht</li>
@@ -284,10 +312,10 @@
                         <img src="img/unlimited.png" alt="">
                         <span class="pricing__name">Unlimited</span>
                         <div class="pricing__cost">$
-                                <div>
-                                    <span class="pricing__cost-number">99</span>/mo
-                                </div>
+                            <div>
+                                <span class="pricing__cost-number">99</span>/mo
                             </div>
+                        </div>
                         <ul class="pricing__list">
                             <li class="pricing__list-item">6 GB storage</li>
                             <li class="pricing__list-item">Fast Brandwidht</li>

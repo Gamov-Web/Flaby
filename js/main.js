@@ -3,16 +3,17 @@ $(document).ready(function() {
     $('.reviews__slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        prevArrow: $('.reviews__arrows-prev'),
-        nextArrow: $('.reviews__arrows-next'),
-        infinite: false
+        prevArrow: $('.reviews__arrow-prev'),
+        nextArrow: $('.reviews__arrow-next'),
+        infinite: false,
+        draggable: false
     });
 
-    $('.burger-menu').click(function(){
-        $('.modal-menu').show();
+    $('.burger-menu').on('click', function(){
+        $('.modal-menu').slideToggle();
     });
 
-    $('.button-close').click(function(){
-        $('.modal-menu').hide();
+    $('.button-close').on('click', function(){
+        $('.modal-menu').slideToggle();
     });
 });
